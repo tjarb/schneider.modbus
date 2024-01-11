@@ -6,8 +6,8 @@
         "local"
     ],
   "images": {
-    "large": "drivers/master/assets/images/large.png",
-    "small": "drivers/master/assets/images/small.png"
+    "large": "drivers/powertag/assets/images/large.png",
+    "small": "drivers/powertag/assets/images/small.png"
   },
   "class": "other",
   "capabilities": [
