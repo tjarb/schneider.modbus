@@ -1,17 +1,5 @@
 {
   "0.1.0": {
-    "en": "Initial release for Duco ventilation box (focus, silence) using Modbus TCP"
-  },
-  "0.1.1": {
-    "en": "cleanup unused flows"
-  },
-  "0.1.2": {
-    "en": "fixed issues unused flow triggers"
-  },
-  "0.2.0": {
-    "en": "major changes. Added discovery, supporing different device nodes (not all yet)"
-  },
-  "0.2.1": {
-    "en": "added device support for iAV and contact"
+    "en": "Initial release for Schneider Electric app using Modbus TCP"
   }
 }

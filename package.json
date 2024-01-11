@@ -1,7 +1,7 @@
 {
-  "name": "duco.modbus",
+  "name": "schneider.modbus",
   "version": "0.1.0",
-  "description": "Monitor and control duco products over modbus protocol",
+  "description": "Monitor and control Schneider Electric products over modbus protocol",
   "main": "app.js",
   "dependencies": {
     "events": "^3.3.0",
@@ -19,15 +19,15 @@
     "url": "git+https://github.com/tjarb/duco.modbus.git"
   },
   "keywords": [
-    "Duco",
-    "Focus",
-    "ventilation",
+    "Schneider Electric",
+	"Schneider",
+    "energy",
     "modbus"
   ],
-  "author": "tjarb",
+  "author": "Tjaro Boerkoel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tjarb/duco.modbus/issues"
+    "url": "https://github.com/tjarb/schneider.modbus/issues"
   },
-  "homepage": "https://github.com/tjarb/duco.modbus"
+  "homepage": "https://github.com/schneider/duco.modbus"
 }

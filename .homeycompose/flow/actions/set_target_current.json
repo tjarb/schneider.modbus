@@ -1,5 +1,5 @@
 {
-    "id": "set_target_current",
+    "id": "set_energymeter",
     "title": {
         "en": "Limit the active carger current",
         "sv": "Begränsa den aktiva strom"

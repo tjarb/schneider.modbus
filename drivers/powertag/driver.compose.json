@@ -14,49 +14,16 @@
 	
   ],
   "capabilitiesOptions": {
-    "operational_status": {
-      "title": {
-        "en": "Mode"
-      }
-    },
+    
 	"operational_status.type": {
       "title": {
         "en": "Type"
       }
-    },
-	"meter_power.actual": {
-      "title": {
-        "en": "State"
-      },
-	  "decimals": 0
-    },
-    "measure_power.avg": {
-      "title": {
-        "en": "Average"
-      },
-	  "decimals": 0
-    },
-    "measure_power.max": {
-      "title": {
-        "en": "Max power"
-      }
-	},
-    "flow_level": {
-      "title": {
-        "en": "Flow level"
-      }
-	},
-    "flow_level.low": {
-      "title": {
-        "en": "Lower limit"
-      }	  
-    },
-	"flow_level.high": {
-      "title": {
-        "en": "Upper limit"
-      }
-  }},
-   "pair": [
+    }
+	
+  
+ },
+ "pair": [
 	{
       "id": "start"
     },

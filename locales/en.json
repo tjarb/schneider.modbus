@@ -1,32 +1,17 @@
 {
   "settings": {
-    "title": "Duco settings",
+    "title": "Settings",
     "subtitle": "Please enter port. Default port is 502."
   },
   "pair": {
-    "title": "Add your Duco product",
+    "title": "Add your Ddevice",
     "nosettings": "Please fill in all the required fields.",
-    "intro": "Enter the required fields for you Duco product.",
+    "intro": "Enter the required fields for your product.",
     "address": "IP Address",
     "port": "Port",
-    "polling": "Polling Frequency",
+	"polling": "Polling Frequency",
     "connect": "Connect"
-  },
-  "AUTO":	 "AUTO",				
-  "Manual 1":	 "Manual 1",
-  "Manual 2":	 "Manual 2",
-  "Manual 3":	 "Manual 3",
-  "Away"	:	 "Away",
-  "Preparing":	 "Preparing",
-  "Permanent 1"	: "Permanent 1",
-  "Permanent 2"	: "Permanent 2",
-  "Permanent 3"	: "Permanent 3",
-  "NA"			: "Information Not Available",
-  "Unknown": 	 "Unknown",						
-  "Unreachable": "Unreachable",
-  "Off": "Off",
-  "Standby": "Charger Standby",
-  "Charge": "Battery Charging",
-  "Discharge": "Battery Discharging"
+  }
+  
   
 }
