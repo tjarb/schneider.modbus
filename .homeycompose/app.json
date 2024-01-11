@@ -7,7 +7,7 @@
     "en": "Schneider Electric"
   },
   "description": {
-    "en": "Digital partner for Sustainability and Efficiency."
+    "en": "Life is ON."
   },
   "category": "energy",
   "tags": {
@@ -22,12 +22,19 @@
   "author": {
     "name": "tjarco boerkoel"
   },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "tja boe"
+      }
+    }
+  },
   "contributors": {},
   "bugs": {
     "url": "https://github.com/tjarb/duco.modbus/issues"
   },
   "source": "https://github.com/tjarb/duco.modbus",
-  "homeyCommunityTopicId": 0,
+  "homeyCommunityTopicId": 100799,
   "images": {
     "xlarge": "./assets/images/xlarge.png",
     "large": "./assets/images/large.png",

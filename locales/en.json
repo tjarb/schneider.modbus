@@ -4,7 +4,7 @@
     "subtitle": "Please enter port. Default port is 502."
   },
   "pair": {
-    "title": "Add your Ddevice",
+    "title": "Add your Device",
     "nosettings": "Please fill in all the required fields.",
     "intro": "Enter the required fields for your product.",
     "address": "IP Address",
