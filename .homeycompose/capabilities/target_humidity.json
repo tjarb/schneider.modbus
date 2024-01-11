@@ -1,0 +1,61 @@
+{
+  "type": "number",
+  "min": 0,
+  "max": 2000,
+  "title": {
+    "en": "Target RH",
+    "nl": "Ingestelde RH"
+  },
+  "units": {
+    "en": "%"
+  },
+  "chartType": "stepLine",
+  "decimals": 2,
+  "insights": true,
+  "getable": true,
+  "setable": true,
+  "uiComponent": "sensor",
+  "$flow": {
+    "triggers": [
+      {
+        "id": "target_RH_changed",
+        "title": {
+          "en": "Target RH changed",
+          "nl": "Streeftwaarde RH is veranderd"
+        },
+        "tokens": [
+          {
+            "name": "target_RH",
+            "title": {
+              "en": "Target RH",
+              "nl": "Streefwaare RH"
+            },
+            "type": "number",
+            "example": 10
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "target_RH_set",
+        "highlight": true,
+        "title": {
+          "en": "Set RH target",
+          "nl": "Stel RH streefwaarde in"
+        },
+        "args": [
+          {
+            "name": "target_RH",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "label": "%",
+            "labelDecimals": 0
+          }
+        ]
+      }
+    ]
+  }
+}

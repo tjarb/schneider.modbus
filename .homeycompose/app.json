@@ -1,0 +1,40 @@
+{
+  "id": "Schneider.modbus",
+  "sdk": 3,
+  "version": "0.1.0",
+  "compatibility": ">=5.0.0",
+  "name": {
+    "en": "Schneider Electric"
+  },
+  "description": {
+    "en": "Digital partner for Sustainability and Efficiency."
+  },
+  "category": "energy",
+  "tags": {
+    "en": [
+      "Schneider electric",
+      "Acti9",
+	  "PowerTag",
+      "modbus",
+      "energy"
+    ]
+  },
+  "author": {
+    "name": "tjarco boerkoel"
+  },
+  "contributors": {},
+  "bugs": {
+    "url": "https://github.com/tjarb/duco.modbus/issues"
+  },
+  "source": "https://github.com/tjarb/duco.modbus",
+  "homeyCommunityTopicId": 0,
+  "images": {
+    "xlarge": "./assets/images/xlarge.png",
+    "large": "./assets/images/large.png",
+    "small": "./assets/images/small.png"
+  },
+  "brandColor": "#00cc00",
+  "dependencies": {
+    "net": "*"
+  }
+}

@@ -1,0 +1,136 @@
+<script type="text/javascript">
+
+  Homey.setTitle(__('pair.title'));
+
+  $(function () {
+    $('#connect').click(function () {
+      $('.duco-error').hide();
+		
+      var inputaddress = $('#address').val();
+      var inputport = Number($('#port').val());
+      var inputpolling = Number($('#polling').val());
+	  var inputmodbus_id = Number($('#modbus_id').val());
+
+      if (inputaddress != '' && inputport != '' && inputpolling != '' && inputmodbus_id != '') {
+			var device_data = {
+			  id: inputaddress
+			};
+
+			var settings = {
+			  address: inputaddress,
+			  port: inputport,
+			  polling: inputpolling,
+			  modbus_id: inputmodbus_id
+			};
+			
+			Homey.emit('settings', settings).then(function (result) {
+						console.log(result);
+						if (!result) {
+							$('.duco-error').show();
+							$('.duco-error-msg').html('Failed to connect to the Duco mastser!');
+						}
+			});
+			/*
+			Homey.addDevice({
+			  name: "duco ",
+			  data: device_data,
+			  settings: settings
+			})
+			  .then(function (result) {
+				$('.duco-error').hide();
+				Homey.done();
+			  })
+			  .catch(function (error) {
+				$('.duco-error').show();
+				$('.duco-error-msg').html(error.message || error.toString());
+			  });
+			  */
+			  
+			/*, function(error, result) {
+			  if (error) {
+				  $('.duco-error').show();
+				  $('.duco-error-msg').html(error.message || error.toString() );
+			  }
+			  $('.duco-error').hide();
+	  
+			  Homey.done();
+			})*/
+
+      } else 
+	  {		alert("exception");
+			$('.duco-error').show();
+			$('.duco-error-msg').html(__('pair.nosettings'));
+      }
+
+    });
+  })
+</script>
+
+<style type="text/css">
+  .form-group {
+    width: 100%;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .form-group label {
+    display: block;
+  }
+
+  .duco-status,
+  .duco-info {
+    display: none;
+  }
+
+  .duco-info {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .duco-info .info-label {
+    min-width: 150px;
+    font-weight: 700;
+  }
+
+  .buttons,
+  .messages {
+    padding-top: 14px;
+  }
+
+  .button:disabled {
+    color: #ccc;
+  }
+
+  .button:enabled {
+    background-color: #00c139 !important;
+    color: #fff;
+  }
+</style>
+
+<p data-i18n="pair.intro">Enter the IP address and port of your product and set the polling frequency.</p>
+<div class="duco-pairing">
+  <div class="form-group">
+    <label for="address" data-i18n="pair.address">IP address</label>
+    <input type="text" class="form-control" id="address" placeholder="0.0.0.0" required>
+  </div>
+  <div class="form-group">
+    <label for="port" data-i18n="pair.port">Port</label>
+    <input type="number" class="form-control" id="port" placeholder="502" value="502" required>
+  </div>
+  <div class="form-group">
+    <label for="polling" data-i18n="pair.polling">Polling Frequency</label>
+    <input type="number" class="form-control" id="polling" min="5" max="3600" placeholder="5" value="30" required>
+  </div>
+  <div class="form-group">
+    <label for="modbus_id" data-i18n="pair.modbus_id">Modbus ID</label>
+    <input type="number" class="form-control" id="modbus_id" min="0" max="255" placeholder="1" value="1" required>
+  </div>
+  <div class="form-group buttons">
+    <button id="connect" class="button" data-i18n="pair.connect">Connect</button>
+  </div>
+</div>
+
+<div class="messages">
+  <p class="duco-status duco-error" style="color: #ff6300;"><i class="fa fa-times"></i> <span
+      class="duco-error-msg"></span></p>
+</div>

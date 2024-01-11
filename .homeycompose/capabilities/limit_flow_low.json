@@ -1,0 +1,62 @@
+{
+  "type": "number",
+  "min": 0,
+  "max": 100,
+  "title": {
+    "en": "Limit lower limit",
+    "nl": "Ingestelde ondergrens"
+  },
+  "units": {
+    "en": "%"
+  },
+  "chartType": "stepLine",
+  "decimals": 2,
+  "insights": true,
+  "getable": true,
+  "setable": true,
+  "icon": "/assets/house.svg",
+  "uiComponent": "sensor",
+  "$flow": {
+    "triggers": [
+      {
+        "id": "Low_limit_flow_changed",
+        "title": {
+          "en": "The lower limit changed",
+          "nl": "De ingestelde ondergrens is veranderd"
+        },
+        "tokens": [
+          {
+            "name": "Low_limit_flow",
+            "title": {
+              "en": "Lower limit",
+              "nl": "Ingestelde ondergrens"
+            },
+            "type": "number",
+            "example": 25
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "Low_limit_flow_set",
+        "highlight": true,
+        "title": {
+          "en": "Set the lower limit",
+          "nl": "Stel de ondergrens in"
+        },
+        "args": [
+          {
+            "name": "Low_limit_flow",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "label": "%",
+            "labelDecimals": 0
+          }
+        ]
+      }
+    ]
+  }
+}

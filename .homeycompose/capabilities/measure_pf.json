@@ -1,0 +1,43 @@
+{
+  "type": "number",
+  "title": {
+    "en": "power factor ",
+    "nl": "power factor"
+  },
+  "units": {
+    "en": "%"
+  },
+  "insights": true,
+  "desc": {
+    "en": "Power factor (%)",
+    "nl": "Power factor (%)"
+  },
+  "decimals": 0,
+  "chartType": "spline",
+  "getable": true,
+  "setable": false,
+  "icon": "/assets/house.svg",
+  "uiComponent": "sensor",
+  "$flow": {
+    "triggers": [
+      {
+        "id": "measure_pf_changed",
+        "highlight": true,
+        "title": {
+          "en": "The power factor changed",
+          "nl": "Power factor is veranderd"
+        },
+        "tokens": [
+          {
+            "name": "measure_pf",
+            "title": {
+              "en": "Power factor"
+            },
+            "type": "number",
+            "example": 99
+          }
+        ]
+      }
+    ]
+  }
+}

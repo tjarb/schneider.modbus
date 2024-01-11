@@ -1,0 +1,61 @@
+{
+  "type": "number",
+  "min": 0,
+  "max": 2000,
+  "title": {
+    "en": "Target co2",
+    "nl": "Ingestelde co2"
+  },
+  "units": {
+    "en": "ppm"
+  },
+  "chartType": "stepLine",
+  "decimals": 2,
+  "insights": true,
+  "getable": true,
+  "setable": true,
+  "uiComponent": "sensor",
+  "$flow": {
+    "triggers": [
+      {
+        "id": "target_co2_changed",
+        "title": {
+          "en": "The target co2 changed",
+          "nl": "De ingestelde debiet is veranderd"
+        },
+        "tokens": [
+          {
+            "name": "target_co2",
+            "title": {
+              "en": "Target co2",
+              "nl": "Ingestelde co2"
+            },
+            "type": "number",
+            "example": 800
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "target_co2_set",
+        "highlight": true,
+        "title": {
+          "en": "Set co2 target",
+          "nl": "Stel co2 streefwaarde in"
+        },
+        "args": [
+          {
+            "name": "target_co2",
+            "type": "range",
+            "min": 0,
+            "max": 2000,
+            "step": 10,
+            "label": "ppm",
+            "labelDecimals": 0
+          }
+        ]
+      }
+    ]
+  }
+}

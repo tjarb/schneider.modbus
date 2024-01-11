@@ -1,0 +1,62 @@
+{
+  "type": "number",
+  "min": 0,
+  "max": 100,
+  "title": {
+    "en": "Target flow",
+    "nl": "Ingestelde debiet"
+  },
+  "units": {
+    "en": "%"
+  },
+  "chartType": "stepLine",
+  "decimals": 2,
+  "insights": true,
+  "getable": true,
+  "setable": true,
+  "icon": "/assets/house.svg",
+  "uiComponent": "sensor",
+  "$flow": {
+    "triggers": [
+      {
+        "id": "target_flow_changed",
+        "title": {
+          "en": "The target flow changed",
+          "nl": "De ingestelde debiet is veranderd"
+        },
+        "tokens": [
+          {
+            "name": "target_flow",
+            "title": {
+              "en": "Target flow",
+              "nl": "Ingestelde debiet"
+            },
+            "type": "number",
+            "example": 25
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "target_flow_set",
+        "highlight": true,
+        "title": {
+          "en": "Set the flow",
+          "nl": "Stel de debiet in"
+        },
+        "args": [
+          {
+            "name": "target_flow",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "label": "%",
+            "labelDecimals": 0
+          }
+        ]
+      }
+    ]
+  }
+}

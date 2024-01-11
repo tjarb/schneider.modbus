@@ -1,0 +1,23 @@
+{
+    "title": {
+        "en": "Target level",
+		"nl": "Target level"
+    },
+    "type": "number",
+    "desc": {
+        "en": "The ventilation level",
+		"nl": "Ventilatie niveau"
+    },
+    "min": 0,
+    "max": 100,
+    "decimals": 0,
+    "step": 1,
+    "units": {
+        "en": "%"
+    },
+    "setable": true,
+    "getable": true,
+    "insights": true,
+    "uiComponent": "sensor",
+    "chartType": "stepLine"
+}

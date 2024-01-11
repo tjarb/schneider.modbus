@@ -1,0 +1,31 @@
+{
+  "triggers": [
+    {
+      "id": "changedOperationalStatus",
+      "title": {
+        "en": "Status changed",
+        "nl": "Status gewijzigd",
+        "sv": "Status ändrad"
+      },
+      "titleFormatted": {
+        "en": "Status changed to [[status]]",
+        "sv": "Status ändrades till [[status]]"
+      },
+      "tokens": [
+        {
+          "name": "status",
+          "type": "string",
+          "title": {
+            "en": "Operational Status",
+            "nl": "Operationele status",
+            "sv": "Operationell status"
+          },
+          "example": "Occupied"
+        }
+      ]  
+    }
+  ],
+  "conditions": [
+    
+  ]
+}

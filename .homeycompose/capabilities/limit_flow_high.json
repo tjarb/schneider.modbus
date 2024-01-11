@@ -1,0 +1,62 @@
+{
+  "type": "number",
+  "min": 0,
+  "max": 100,
+  "title": {
+    "en": "Upper flow limit",
+    "nl": "Bovengrens debiet"
+  },
+  "units": {
+    "en": "%"
+  },
+  "chartType": "stepLine",
+  "decimals": 2,
+  "insights": true,
+  "getable": true,
+  "setable": true,
+  "icon": "/assets/house.svg",
+  "uiComponent": "sensor",
+  "$flow": {
+    "triggers": [
+      {
+        "id": "Upper_limit_changed",
+        "title": {
+          "en": "The Limit upper limit changed",
+          "nl": "De ingestelde bovengrens is veranderd"
+        },
+        "tokens": [
+          {
+            "name": "limit_flow_high",
+            "title": {
+              "en": "Limit upper limit",
+              "nl": "Ingestelde bovengrens"
+            },
+            "type": "number",
+            "example": 25
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "High_limit_set",
+        "highlight": true,
+        "title": {
+          "en": "Set the upper limit",
+          "nl": "Stel de bovengrens in"
+        },
+        "args": [
+          {
+            "name": "Upper_limit_flow",
+            "type": "range",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "label": "%",
+            "labelDecimals": 0
+          }
+        ]
+      }
+    ]
+  }
+}
